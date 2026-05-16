@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: AnimationPage50Starter.ma
-//Last modified: Sat, May 16, 2026 03:07:59 PM
+//Last modified: Sat, May 16, 2026 03:12:38 PM
 //Codeset: UTF-8
 requires maya "2027";
 currentUnit -l centimeter -a degree -t film;
@@ -9,17 +9,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202603302215-e16e754b0e";
 fileInfo "osv" "Mac OS X 20.2";
-fileInfo "UUID" "B336D57A-1948-BE8B-D1A9-34BA3F03A056";
+fileInfo "UUID" "206A78AE-FA47-A50E-31D2-44AA1D509E44";
 createNode transform -s -n "persp";
 	rename -uid "1DFBA4A4-134A-59AA-2739-3C93ABFFD067";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -6.094475577681794 2.9301340823895803 33.871670346160677 ;
+	setAttr ".t" -type "double3" -6.715551328202193 2.7302642364839529 37.323464243112575 ;
 	setAttr ".r" -type "double3" 3.2616472703962058 -10.199999999998843 -5.049419698225312e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8426FD61-B94B-9F60-1746-D0BED0796422";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 34.47142736446272;
+	setAttr ".coi" 37.984341276049491;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1345,8 +1345,8 @@ createNode animCurveTA -n "pSphere1_rotateZ";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 -25 13 25 24 -25;
 select -ne :time1;
-	setAttr ".o" 16;
-	setAttr ".unw" 16;
+	setAttr ".o" 13;
+	setAttr ".unw" 13;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
