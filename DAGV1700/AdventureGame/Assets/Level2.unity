@@ -3353,6 +3353,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2010563644}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1731071433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3473,6 +3485,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0721de5e2342438abd34abb25e80759, type: 3}
+--- !u!198 &2010563644 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7614615073736108602, guid: d37b4306d2b534ae5822da2352de8ef0, type: 3}
+  m_PrefabInstance: {fileID: 1993700691496297748}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2030149213
 GameObject:
   m_ObjectHideFlags: 0

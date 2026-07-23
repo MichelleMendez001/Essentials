@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3743233556277513913}
   - component: {fileID: 2225184301600212480}
   - component: {fileID: 6988490891036941379}
+  - component: {fileID: 6824700552947122888}
+  - component: {fileID: 1900491142823017399}
   m_Layer: 0
   m_Name: Strawberry_0
   m_TagString: Untagged
@@ -30,7 +32,8 @@ Transform:
   m_LocalPosition: {x: 3.07, y: 2.67, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2784223464682408575}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2225184301600212480
@@ -110,3 +113,121 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &6824700552947122888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376991187937772442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.32, y: 0.32, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1900491142823017399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376991187937772442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7871348651906755299}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 25
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1001 &1173682964932336987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3743233556277513913}
+    m_Modifications:
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23247199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.12058797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501188165656135341, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+      propertyPath: m_Name
+      value: CoinParticles (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+--- !u!4 &2784223464682408575 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3957061042219767588, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+  m_PrefabInstance: {fileID: 1173682964932336987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7871348651906755299 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9040245717328656312, guid: d049007f68faf4e91920ef0f80efda44, type: 3}
+  m_PrefabInstance: {fileID: 1173682964932336987}
+  m_PrefabAsset: {fileID: 0}
